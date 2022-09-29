@@ -20,27 +20,21 @@
       crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./style.css">
-    <title>01 - Expanding Cards</title>
+    <title>02 - Progress Steps</title>
   </head>
 
-  <body>
+  <body class="d-flex height-custom">
     <div class="container">
-      <div class="d-flex">
-        <div class="bg-img bg-img-01 active">
-          <div class="title-banner">Explore The World</div>
-        </div>
-        <div class="bg-img bg-img-02">
-          <div class="title-banner">Wild Forest</div>
-        </div>
-        <div class="bg-img bg-img-03">
-          <div class="title-banner">Sunny Beach</div>
-        </div>
-        <div class="bg-img bg-img-04">
-          <div class="title-banner">City on Winter</div>
-        </div>
-        <div class="bg-img bg-img-05">
-          <div class="title-banner">Mountains - Cloudss</div>
-        </div>
+      <div class="progress-container d-flex mx-auto">
+        <div class="progress-step" id="progress"></div>
+        <div class="circle-steps active">1</div>
+        <div class="circle-steps">2</div>
+        <div class="circle-steps">3</div>
+        <div class="circle-steps">4</div>
+      </div>
+      <div class="wrap-btn">
+        <button class="btn-step" id="prev" disabled>Prev</button>
+        <button class="btn-step" id="next">Next</button>
       </div>
     </div>
 
