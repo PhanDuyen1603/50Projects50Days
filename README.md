@@ -1,7 +1,7 @@
 # 50-Projects-50-Days
 
-01	Expanding Cards
-02	Progress Steps
+#01	Expanding Cards
+#02	Progress Steps
 03	Rotating Navigation Animation
 04	Hidden Search Widget
 05	Blurry Loading
