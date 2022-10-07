@@ -51,3 +51,23 @@
 49	Todo List
 50	Insect Catch Game
 
+## For chessground (if you interested in chess by the way)
+
+Install build dependencies:
+
+```sh
+yarn install
+```
+
+To build the node module:
+
+```sh
+yarn run compile -- --watch
+```
+
+To build the standalone:
+
+```sh
+yarn run dist -- --watch
+```
+
