@@ -1,0 +1,46 @@
+.cg-wrap piece.p-piece.white {
+  background-image: url('./images/pieces/playok/red_pawn.svg');
+}
+.cg-wrap piece.b-piece.white {
+  background-image: url('./images/pieces/playok/red_elephant.svg');
+}
+.cg-wrap piece.n-piece.white {
+  background-image: url('./images/pieces/playok/red_horse.svg');
+}
+.cg-wrap piece.r-piece.white {
+  background-image: url('./images/pieces/playok/red_chariot.svg');
+}
+.cg-wrap piece.a-piece.white {
+  background-image: url('./images/pieces/playok/red_advisor.svg');
+}
+.cg-wrap piece.c-piece.white {
+  background-image: url('./images/pieces/playok/red_cannon.svg');
+}
+.cg-wrap piece.k-piece.white {
+  background-image: url('./images/pieces/playok/red_king.svg');
+}
+.cg-wrap piece.m-piece.white {
+  background-image: url('./images/pieces/playok/red_chariot.svg');
+}
+
+.cg-wrap piece.p-piece.black {
+  background-image: url('./images/pieces/playok/black_pawn.svg');
+}
+.cg-wrap piece.b-piece.black {
+  background-image: url('./images/pieces/playok/black_elephant.svg');
+}
+.cg-wrap piece.n-piece.black {
+  background-image: url('./images/pieces/playok/black_horse.svg');
+}
+.cg-wrap piece.r-piece.black {
+  background-image: url('./images/pieces/playok/black_chariot.svg');
+}
+.cg-wrap piece.a-piece.black {
+  background-image: url('./images/pieces/playok/black_advisor.svg');
+}
+.cg-wrap piece.c-piece.black {
+  background-image: url('./images/pieces/playok/black_cannon.svg');
+}
+.cg-wrap piece.k-piece.black {
+  background-image: url('./images/pieces/playok/black_king.svg');
+}
