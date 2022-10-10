@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fork</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/chessground.base.css">
+    <link rel="stylesheet" type="text/css" href="assets/chessground.brown.css">
+    <link rel="stylesheet" type="text/css" href="assets/chessground.cburnett.css">
+    <link rel="stylesheet" type="text/css" href="assets/chessgroundxiangqi.css" />
+    <style>
+        #chessground {
+            width: 600px;
+        }
+
+        cg-board {
+            background-color: #bfcfdd;
+        }
+    </style>
+
+    <!-- <script type="module">
+        import { Chessground } from './chessground.js';
+
+        const config = {
+            dimensions: {width: 9,
+              height: 10},
+            fen: 'rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR',
+            addDimensionsCssVarsTo: document.body,
+          };
+        const ground = Chessground(document.getElementById('chessground'), config);
+        
+    </script> -->
+</head>
+<body>
+    <div id="chessground"></div>
+    <script>
+        const cg = document.getElementById('chessground');
+        console.log(cg.clientWidth);
+        const cgWidth = cg.clientWidth;
+        cg.style.height = `${cgWidth*1.112}px`;
+    </script>
+    <script type="module" src="./test.js"></script>
+</body>
+</html>
