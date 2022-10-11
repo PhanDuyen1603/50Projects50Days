@@ -1,0 +1,27 @@
+{
+  "name": "50projects50days",
+  "version": "1.0.0",
+  "description": "dien project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhanDuyen1603/50Projects50Days.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "PhanDuyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhanDuyen1603/50Projects50Days/issues"
+  },
+  "homepage": "https://github.com/PhanDuyen1603/50Projects50Days#readme",
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
