@@ -12,3 +12,7 @@ function removeActiveClass(){
     panel.classList.remove('active')
   });
 }
+
+$(function(){
+  $("#nav-placeholder").load("../navbar/nav.html");
+});
