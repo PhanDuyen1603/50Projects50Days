@@ -52,6 +52,7 @@
 50 Insect Catch Game
 
 ## Prettier format
+
 ```sh
 yarn prettier --write .
 ```

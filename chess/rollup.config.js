@@ -13,12 +13,8 @@ export default {
       file: 'dist/chessground.min.js',
       format: 'iife',
       name: 'Chessground',
-      plugins: [
-        terser(),
-      ],
+      plugins: [terser()],
     },
   ],
-  plugins: [
-    typescript(),
-  ],
+  plugins: [typescript()],
 };
