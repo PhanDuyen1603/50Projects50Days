@@ -45,8 +45,3 @@ function update() {
     next.disabled = false;
   }
 }
-
-
-$(function(){
-  $("#nav-placeholder").load("../navbar/nav.html");
-});
