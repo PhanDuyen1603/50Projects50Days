@@ -1,14 +1,20 @@
-const panels = document.querySelectorAll('.bg-img')
+const boxes = document.querySelectorAll('.box');
 
-panels.forEach(panel => {
-  panel.addEventListener('click', () =>{
-    removeActiveClass();
-    panel.classList.add('active');
-  })
-});
 
-function removeActiveClass(){
-  panels.forEach(panel => {
-    panel.classList.remove('active')
+window.addEventListener('scroll', checkBoxs)
+checkBoxs();
+
+function checkBoxs() {
+  const triggerHeight = window.innerHeight / 5 *4;
+
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top;
+    if(boxTop < triggerHeight)
+    {
+      box.classList.add('show');
+    }
+    else{
+      box.classList.remove('show');
+    }
   });
 }

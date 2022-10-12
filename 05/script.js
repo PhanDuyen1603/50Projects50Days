@@ -1,14 +1,22 @@
-const panels = document.querySelectorAll('.bg-img')
+const bg = document.getElementById('bg');
+const loadText = document.getElementById('loadText');
+console.log(bg);
+console.log(loadText);
 
-panels.forEach(panel => {
-  panel.addEventListener('click', () =>{
-    removeActiveClass();
-    panel.classList.add('active');
-  })
-});
+let load = 0;
 
-function removeActiveClass(){
-  panels.forEach(panel => {
-    panel.classList.remove('active')
-  });
+let int = setInterval(loadIncrease,30);
+
+function loadIncrease() {
+    load++;
+    if(load === 100){
+        clearInterval(int);
+    }
+    loadText.innerText = `${load}%`;
+    loadText.style.opacity = scale(load, 0, 100, 1, 0);
+    bg.style.filter = `blur(${scale(load, 0 , 100 , 10 , 0)}px)`
+}
+
+function scale (number, inMin, inMax, outMin, outMax) {
+    return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }
