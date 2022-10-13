@@ -1,0 +1,80 @@
+* {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-left {
+  background: url(ps.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.tab-right {
+  background: url(xbox.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.tab-left .btn-buy:hover {
+  background-color: rgb(87 84 236);
+  border-color: rgb(87 84 236);
+  color: #fff;
+}
+
+.tab-right .btn-buy:hover {
+  background-color: rgb(28 122 28);
+  border-color: rgb(28 122 28);
+  color: #fff;
+}
+
+.btn-buy {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.tab-left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(87, 84, 236, 0.7);
+}
+
+.tab-right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 43, 43, 0.8);
+}
