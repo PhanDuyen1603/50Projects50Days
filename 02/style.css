@@ -24,7 +24,7 @@ body {
 }
 
 .progress-container::before {
-  content: '';
+  content: "";
   background-color: #e0e0e0;
   position: absolute;
   top: 50%;
@@ -81,8 +81,7 @@ body {
   border-color: #3498db;
 }
 
-
-.wrap-btn{
+.wrap-btn {
   text-align: center;
   margin-top: 50px;
 }
@@ -94,7 +93,6 @@ body {
 .btn-step:focus {
   outline: 0;
 }
-
 
 .btn-step:disabled {
   background-color: #e0e0e0;
