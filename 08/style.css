@@ -6,12 +6,25 @@ body{
   height: 100vh;
   overflow: hidden;
   color: white;
+  font-family: 'Mulish', sans-serif;
 }
 
 .container {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px 40px;
   border-radius: 5px;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control input:focus, 
+.form-control input:valid{
+  outline: 0;
+  border-bottom-color: lightblue;
 }
 
 .center{
