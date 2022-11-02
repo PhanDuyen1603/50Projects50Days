@@ -31,32 +31,36 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
-    />
+    /> 
 
     <link rel="stylesheet" href="./style.css" />
-    <title>16 - Drink Water</title>
+    <title>17 - Movie App</title>
   </head>
 
   <body>
-    <h1>Drink Water</h1>
-    <h3>Goal: 2 Liters</h3>
-    <div class="cup">
-      <div class="remained" id="remained">
-        <span id="liters"></span>
-      </div>
+    <div class="container">
+      <header class="header">
+        <form action="" id="form">
+          <input type="text" class="search" id="search" placeholder="Search...">
+        </form>
+      </header>
+      <main class="main" id="main">
+        <div class="movie">
+          <img height="450" src="https://image.tmdb.org/t/p/w1280/yw8NQyvbeNXoZO6v4SEXrgQ27Ll.jpg" alt="">
+          <div class="movie-info" id="movie-info">
+            <h3>Terrifier 2</h3>
+            <span class="orange">7.3</span>
+          </div>
+          <div class="overview">
+            <h3>Overview</h3>
+            After being resurrected by a sinister entity, Art the Clown returns to Miles County where he must hunt down and destroy a teenage girl and her younger brother on Halloween night.  As the body count rises, the siblings fight to stay alive while uncovering the true nature of Art's evil intent.
+          </div>
+
+          
+        </div>
+
+      </main>
     </div>
-    <p class="text">Select how many glasses of water that you have drank</p>
-    <div class="cups">
-      <div class="cup cup-small"></div>
-      <div class="cup cup-small"></div>
-      <div class="cup cup-small"></div>
-      <div class="cup cup-small"></div>
-      <div class="cup cup-small"></div>
-      <div class="cup cup-small"></div>
-      <div class="cup cup-small"></div>
-      <div class="cup cup-small"></div>
-    </div>
-    
     <script src="./script.js"></script>
   </body>
 </html>
