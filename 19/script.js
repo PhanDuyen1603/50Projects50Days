@@ -1,10 +1,10 @@
-const clockEl = document.getElementsByClassName('.clock');
+const clockEl = document.querySelector('.clock');
 const dateEl = document.querySelector('.date');
-const timeEl = document.getElementsByClassName('.time');
+const timeEl = document.querySelector('.time')
 const toggle = document.querySelector('.toggle');
 const minuteEl = document.querySelector('minute');
-const secondEl = document.querySelector('.second')
-
+const secondEl = document.querySelector('.second');
+const clockContainer = document.querySelector('.clock-container');
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -22,17 +22,17 @@ toggle.addEventListener('click',(e)=>{
 
 function setTime(){
     const time = new Date();
-   
-    const month = time.getMonth();
-    console.log(month);
-    const date = time.date();
-    const day = time.day();
-    const hours = time.getHours();
-    const hoursClocks = hours >= 13 ? hours % 13 :hours;
-
-
+    const seconds = time.getSeconds();
+    const minutes = time.getMinutes();
+    const hour = time.getHours();
+    //const hoursClocks = hours >= 13 ? hours % 13 :hours;
+    return `${hour}:${minutes}:${seconds}`;
 }
 
-console.log(time);
+function updateTime(){
+    timeEl.innerHTML = setTime();
+    secondEl.style.transform = `rotate(20deg)`
+}
 
+setInterval(updateTime ,1000)
 
