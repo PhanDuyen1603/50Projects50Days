@@ -17,7 +17,7 @@ toggle.addEventListener('click',(e)=>{
         e.target.innerHTML ='Dark mode';
     }
     else{
-        html.classList.add('dart');
+        html.classList.add('dark');
         e.target.innerHTML = 'Light mode';
     }
 })
@@ -30,8 +30,9 @@ function setTime(){
     const seconds = time.getSeconds();
     const minutes = time.getMinutes();
     const hour = time.getHours();
-    const hoursClocks = hour >= 13 ? hour % 13 :hour;
-    let dateNight;
+    const hoursClocks = hour >= 13 ? hour % 12 :hour;
+    console.log(hour);
+    let dateNight;  
     if(hour<12) dateNight = 'AM'
     else dateNight = 'PM'
     secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds,0,60,0,360)}deg)`
