@@ -2,7 +2,7 @@ const btn = document.querySelector(".btn");
   
     // Listen for click event
     btn.onclick = function (e) {
-        console.log('eh');
+        
         // Create span element
         let ripple = document.createElement("span");
   
