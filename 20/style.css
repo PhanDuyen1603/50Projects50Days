@@ -26,18 +26,24 @@ button {
   position: absolute;
   /* To make it round */
   background-color: white;
-
+  border: 1px solid black;
   width: 200px;
   height: 100px;
   margin-top: -50px;
   /* for positioning */
   margin-left: -112px;
-
-  animation: ripple 1s;
+  
+  /* pointer-event: for user experience
+  when click button, span appear so we only click on span
+  disaple pointer event so we can click on button
+   */
+  pointer-events: none;  
+  animation: ripple 3s linear infinite;
   opacity: 0;
 }
 
 @keyframes ripple {
+  /* animation from appear to disapear, from small to big */
   from {
       opacity: 1;
       transform: scale(0);
