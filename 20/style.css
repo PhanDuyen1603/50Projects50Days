@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400&display=swap');
+
+
+body {
+  font-family: 'Heebo', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  background-color: purple;
+  color: #fff;
+  border: 1px purple solid;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+}
+
+.btn span {
+  position: absolute;
+  /* To make it round */
+  background-color: white;
+
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  /* for positioning */
+  margin-left: -50px;
+
+  animation: ripple 1s;
+  opacity: 0;
+}
+
+@keyframes ripple {
+  from {
+      opacity: 1;
+      transform: scale(0);
+  }
+
+  to {
+      opacity: 0;
+      transform: scale(10);
+  }
+}
+
+
+
+
+
